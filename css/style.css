@@ -1,14 +1,20 @@
 body {
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 14px;
+    min-width: 1122px;
+    margin: 0;
 }
+
+/************************************************
+Заголовки Барбершоп
+*************************************************/
 
 h1 {
     font-size: 30px;
     text-transform: uppercase;
     font-weight: bolder;
     color: #000000;
-/*    line-height: 0.7;*/
+    margin-bottom: 28px;
 }
 
 h2 {
@@ -16,4 +22,172 @@ h2 {
     text-transform: uppercase;
     font-weight: bold;
     color: #000000;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.main-footer {
+    background-image: url("../img/bg_footer.jpg");
+}
+
+/*************************************************
+Оформление Хедера
+**************************************************/
+
+.main-header {
+    min-height: 70px;
+    background: #000000;
+    margin-bottom: 60px;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo-in-nav {
+    width: 140px;
+    float: left;
+}
+
+.main-navigation {
+    width: 620px;
+    float: left;
+}
+
+.user-block {
+    width: 140;
+    float: left;
+}
+
+/*************************************************
+Оформление main-navigation
+**************************************************/
+
+.main-navigation li {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.main-navigation li a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/*************************************************
+Оформление breadcrumbs
+**************************************************/
+
+.breadcrumbs li {
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+/*************************************************
+Оформление filters - две формы слева
+**************************************************/
+
+
+.filters, .catalog {
+    float: left;
+    width: 160px;
+}
+
+.filters {
+    margin-right: 40px;
+}
+
+.pagination, .main-footer {
+    clear: both;
+}
+
+input[type="checkbox"] {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+input[type="radio"] {
+    margin-bottom: 25px;
+}
+
+input[name="last"]{
+    margin-bottom: 55px;
+}
+
+/*************************************************
+Оформление catalog - блоков товаров
+**************************************************/
+
+.catalog {
+    width: 730px;
+    background: grey;
+}
+
+.foto {
+/*    width: 220px;*/
+/*    margin-bottom: 30px;*/
+}
+
+article {
+    width: 220px;
+    border: 1px solid grey;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+article:nth-child(3) {
+    margin-right: 0;
+}
+
+article:nth-child(6) {
+    margin-right: 0;
+}
+
+/*************************************************
+Оформление страниц пагинации
+**************************************************/
+
+.pagination {
+    margin-left: 240px;
+    text-transform: uppercase;
+    padding-left: 0;
+}
+
+.pagination li {
+    display: inline-block;
+}
+
+/*************************************************
+Оформление футера
+**************************************************/
+
+.footer-contact, .footer-social, .footer-copyright {
+    float: left;
+}
+
+.footer-contact {
+    width: 310px;
+    margin-right: 60px;
+}
+
+.footer-social {
+    width: 140px;
+    margin-right: 220px;
+}
+
+.footer-copyright {
+    width: 140px;
 }

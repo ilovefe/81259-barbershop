@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="main-header">
-        <div class="container">
+        <div class="container clearfix">
             <div class="logo-in-nav">
                 <img src="img/Logo_in_nav.png" alt="Barbershop"> 
             </div>
@@ -39,8 +39,7 @@
     
     <main class="container">
         <h1>Средства для ухода</h1>
-        <nav class="breadcrumbs">
-            <ul>
+            <ul class="breadcrumbs">
                 <li>
                     <a href="#">Главная</a>
                 </li>
@@ -48,11 +47,10 @@
                     <a href="#">Магазин</a>
                 </li>
                 <li>
-                    <a href="#">Средства для ухода</a>
+                    <span>Средства для ухода</span>
                 </li>
             </ul>
-        </nav>
-        
+                
         <div class="index-content">
            <div class="filters">
             <h2>Производители</h2>
@@ -73,37 +71,48 @@
                 <input type="checkbox" > Murray's
                 </label><br>
                 <label>
-                <input type="checkbox" checked> American Crew
+                <input type="checkbox" checked name="last"> American Crew
                 </label><br>
-            </div>
             
-            <div class="filters">
+            
+<!--            <div class="filters">-->
                 <h2>Группы товаров</h2>
                 <label>
-                <input type="checkbox" checked> Бритвенные принадлежности
+                <input type="radio" name="item-filter" value="1" checked> Бритвенные принадлежности
                 </label><br>
                 <label>
-                <input type="checkbox"> Средства для ухода
+                <input type="radio" name="item-filter" value="2"> Средства для ухода
                 </label><br>
                 <label>
-                <input type="checkbox"> Аксессуары
+                <input type="radio" name="item-filter" value="3"> Аксессуары
                 </label><br>
-            </form>
                 <a class="btn" href="#">Показать</a>
+            </form>
             </div>
+<!--            </div>-->
             
             <div class="catalog">
             
                <article>
-                <a href="#" class="catalog-link-image"><img src="img/image_in_catalog1.png" width="150" height="100" alt=""></a>
-                <a href="#" class="catalog-link-name">Набор для путешествий<br>
-                    BAXTER OF CALIFORNIA</a>
-                <b class="price">2900 РУБ.</b>
-                <button class="buy" >КУПИТЬ</button>
+               <div class="foto">
+                <a href="#" class="catalog-link-image"><img src="img/image_in_catalog1.png" alt=""></a>
+                </div>
+                <div>
+                <span class="category">
+                    <a href="#" class="catalog-link-name">Набор для путешествий</a>
+                </span><br>
+                <span class="title">
+                    <a href="#">Baxter of California</a>
+                </span>
+                </div>
+                <div>
+                <span class="price">2900 РУБ.</span>
+                <a href="#" class="buy" >КУПИТЬ</a>
+                </div>
             </article>
             
                <article>
-                <a href="#" class="catalog-link-image"><img src="img/image_in_catalog2.png" width="150" height="100" alt=""></a>
+                <a href="#" class="catalog-link-image"><img src="img/image_in_catalog2.png" alt=""></a>
                 <a href="#" class="catalog-link-name">Увлажняющий кондиционер<br>
                     BAXTER OF CALIFORNIA</a>
                 <b class="price">750 РУБ.</b>
@@ -111,7 +120,7 @@
             </article>
             
                <article>
-                <a href="#" class="catalog-link-image"><img src="img/image_in_catalog3.png" width="150" height="100" alt=""></a>
+                <a href="#" class="catalog-link-image"><img src="img/image_in_catalog3.png" alt=""></a>
                 <a href="#" class="catalog-link-name">Набор для путешествий<br>
                     BAXTER OF CALIFORNIA</a>
                 <b class="price">2900 РУБ.</b>
@@ -119,14 +128,14 @@
             </article>
             
             <article>
-                <a href="#" class="catalog-link-image"><img src="img/image_in_catalog4.png" width="150" height="100" alt=""></a>
+                <a href="#" class="catalog-link-image"><img src="img/image_in_catalog4.png" alt=""></a>
                 <a href="#" class="catalog-link-name">Набор для путешествий<br>
                     BAXTER OF CALIFORNIA</a>
                 <b class="price">2900 РУБ.</b>
                 <button class="buy" >КУПИТЬ</button>            </article>
             
                <article>
-                <a href="#" class="catalog-link-image"><img src="img/image_in_catalog5.png" width="150" height="100" alt=""></a>
+                <a href="#" class="catalog-link-image"><img src="img/image_in_catalog5.png" alt=""></a>
                 <a href="#" class="catalog-link-name">Набор для путешествий<br>
                     BAXTER OF CALIFORNIA</a>
                 <b class="price">2900 РУБ.</b>
@@ -134,7 +143,7 @@
             </article>
             
                <article>
-                <a href="#" class="catalog-link-image"><img src="img/image_in_catalog6.png" width="150" height="100" alt=""></a>
+                <a href="#" class="catalog-link-image"><img src="img/image_in_catalog6.png" alt=""></a>
                 <a href="#" class="catalog-link-name">Набор для путешествий<br>
                     BAXTER OF CALIFORNIA</a>
                 <b class="price">2900 РУБ.</b>
@@ -143,8 +152,7 @@
             
             </div>
             
-            <nav class="pagination">
-                <ul>
+                <ul class="pagination">
                     <li>
                         <a href="#">1</a>
                     </li>
@@ -158,7 +166,6 @@
                         <a href="#">4</a>
                     </li>
                 </ul>
-            </nav>
             </div>
         </main>
            
