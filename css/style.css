@@ -3,6 +3,7 @@ body {
     font-size: 14px;
     min-width: 1122px;
     margin: 0;
+    background-image: url("../img/bg_for_index.png");
 }
 
 /************************************************
@@ -14,7 +15,9 @@ h1 {
     text-transform: uppercase;
     font-weight: bolder;
     color: #000000;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    padding-top: 60px;
 }
 
 h2 {
@@ -26,9 +29,6 @@ h2 {
     margin-bottom: 35px;
 }
 
-.main-footer {
-    background-image: url("../img/bg_footer.jpg");
-}
 
 /*************************************************
 Оформление Хедера
@@ -37,7 +37,7 @@ h2 {
 .main-header {
     min-height: 70px;
     background: #000000;
-    margin-bottom: 60px;
+/*    margin-bottom: 60px;*/
 }
 
 .container {
@@ -91,8 +91,13 @@ h2 {
 .breadcrumbs li {
     text-transform: uppercase;
     display: inline-block;
-    margin-top: 0;
+    
     margin-bottom: 60px;
+}
+
+.breadcrumbs {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /*************************************************
@@ -106,7 +111,7 @@ h2 {
 }
 
 .filters {
-    margin-right: 40px;
+    margin: 0 60px 60px 0;
 }
 
 .pagination, .main-footer {
@@ -114,12 +119,12 @@ h2 {
 }
 
 input[type="checkbox"] {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     text-transform: uppercase;
 }
 
 input[type="radio"] {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 input[name="last"]{
@@ -131,8 +136,8 @@ input[name="last"]{
 **************************************************/
 
 .catalog {
-    width: 730px;
-    background: grey;
+    width: 710px;
+/*    background: grey;*/
 }
 
 .foto {
@@ -142,7 +147,6 @@ input[name="last"]{
 
 article {
     width: 220px;
-    border: 1px solid grey;
     float: left;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -157,11 +161,58 @@ article:nth-child(6) {
 }
 
 /*************************************************
+Оформление страница товара > фотоблок
+**************************************************/
+
+.item-foto-preview {
+    width: 460px;
+    margin-right: 60px;
+    
+}
+
+.foto-main {
+    margin-bottom: 20px;
+}
+
+.mini-foto {
+/*    border: 1px solid #b0b0b0;*/
+    margin-right: 17px;
+    display: inline-block;
+}
+
+.mini-foto:last-child {
+    margin-right: 0;
+}
+
+.little-foto-preview {
+    margin-bottom: 50px;
+}
+
+/*************************************************
+Оформление страница товара > описание
+**************************************************/
+
+.item-foto-preview, .item-review, .item-list {
+    float: left;
+}
+
+.articule {
+    padding-left: 150px;
+}
+
+.item-review-text {
+    margin: 45px 0 50px 0;
+}
+
+.item-list {
+    margin-top: 50px;
+}
+/*************************************************
 Оформление страниц пагинации
 **************************************************/
 
-.pagination {
-    margin-left: 240px;
+ul.pagination {
+    margin: 0 0 50px 240px;
     text-transform: uppercase;
     padding-left: 0;
 }
@@ -190,4 +241,8 @@ article:nth-child(6) {
 
 .footer-copyright {
     width: 140px;
+}
+
+.main-footer {
+    background-image: url("../img/bg_footer.jpg");
 }
